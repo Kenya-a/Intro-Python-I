@@ -23,5 +23,5 @@ with open('C:/Users/Owner/Desktop/lambda/CS24/w1-Intro-To-Python-and-OOP/Intro-P
 # YOUR CODE HERE
 
 w= open('bar.txt', 'w')
-w.write("Is the arbitrary content? /n Is this arbitrary content? /n Of course.")
+w.write("Is the arbitrary content? \n Is this arbitrary content? \n Of course.")
 w.close()
