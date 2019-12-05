@@ -14,18 +14,16 @@ print(place.lon)
 # constructor. It should inherit from LatLon. Look up the `super` method.
 
 # YOUR CODE HERE
-
 class Waypoint(LatLon):
     def __init__(self, name, lat, lon):
         super().__init__(lat, lon)
         self.name = name
-    
+
     def __str__(self):
-        return f"{self.name}'s location is latitude: {self.lat}, longitude: {self.lon}"
+        return f"{self.name}'s location is Lat: {self.lat}, Long: {self.lon}'"
 
-    newPlaceOne = Waypoint('outside', 40, 50)
-    print(newPlaceOne.name)
-
+        newPlaceOne = Waypoint("somewhereOutside", 40, 50)
+        print(newPlaceOne)
 # Make a class Geocache that can be passed parameters `name`, `difficulty`,
 # `size`, `lat`, and `lon` to the constructor. What should it inherit from?
 
@@ -36,7 +34,6 @@ class Geocache(Waypoint):
         super().__init(name, lat, lon)
         self.difficulty = difficulty
         self.size = size
-    
     def __str__(self):
         return f"Geocache: {self.name}, diff: {self.difficulty}, size: {self.size}, lat: {self.lat}, lon: {self.lon}"
 
